@@ -21,10 +21,9 @@ return {
     opts = function(_, conf)
       require "configs.blade"
 
-      conf.ensure_installed = {
-        "vim",
-        "lua",
-        "vimdoc",
+      conf.auto_install = true
+
+      local ensure_installed = {
         "html",
         "css",
         "javascript",
@@ -35,6 +34,8 @@ return {
         "php",
         "blade",
       }
+
+      vim.list_extend(conf.ensure_installed, ensure_installed)
 
       return conf
     end,
