@@ -33,6 +33,7 @@ return {
         "python",
         "php",
         "blade",
+        "go",
       }
 
       vim.list_extend(conf.ensure_installed, ensure_installed)
