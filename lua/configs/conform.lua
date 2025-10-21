@@ -8,6 +8,7 @@ local options = {
     vue = { "prettier" },
     json = { "prettier" },
     markdown = { "prettier" },
+    yaml = { "prettier" },
     python = { "isort", "black" },
     blade = { "blade-formatter" },
   },
