@@ -19,8 +19,6 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, conf)
-      require "configs.blade"
-
       conf.auto_install = true
 
       local ensure_installed = {
