@@ -18,10 +18,13 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = function(_, conf)
-      conf.auto_install = true
-
-      local ensure_installed = {
+    lazy = false,
+    build = ":TSUpdate",
+    config = function()
+      require("nvim-treesitter").install {
+        "vim",
+        "lua",
+        "vimdoc",
         "html",
         "css",
         "javascript",
@@ -32,10 +35,6 @@ return {
         "php",
         "blade",
       }
-
-      vim.list_extend(conf.ensure_installed, ensure_installed)
-
-      return conf
     end,
   },
 }
