@@ -25,6 +25,8 @@ return {
         "vim",
         "lua",
         "vimdoc",
+        "bash",
+        "csv",
         "json",
         "markdown",
         "yaml",
@@ -38,6 +40,8 @@ return {
         "python",
         "php",
         "blade",
+        "sql",
+        "dockerfile",
       }
     end,
   },
