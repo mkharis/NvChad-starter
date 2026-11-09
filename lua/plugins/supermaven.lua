@@ -5,15 +5,14 @@ return {
     {
       "supermaven-inc/supermaven-nvim",
       opts = {
-        keymaps = {
-          accept_suggestion = "<C-g>",
-        },
+        disable_inline_completion = true,
+        disable_keymaps = true,
       },
     },
   },
   opts = {
     sources = {
-      default = { "lsp", "path", "snippets", "buffer", "supermaven" },
+      default = { "supermaven" },
       providers = {
         supermaven = { name = "supermaven", module = "blink.compat.source", async = true },
       },
