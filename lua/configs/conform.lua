@@ -5,12 +5,15 @@ local options = {
     html = { "prettier" },
     javascript = { "prettier" },
     typescript = { "prettier" },
+    svelte = { "prettier" },
     vue = { "prettier" },
     json = { "prettier" },
     markdown = { "prettier" },
     yaml = { "prettier" },
     python = { "isort", "black" },
+    php = { "pint" },
     blade = { "blade-formatter" },
+    sql = { "sql_formatter" },
   },
 
   -- format_on_save = {
