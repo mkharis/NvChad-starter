@@ -1,5 +1,6 @@
 return {
   "saghen/blink.cmp",
+  optional = true,
   dependencies = {
     "saghen/blink.compat",
     {
@@ -14,7 +15,12 @@ return {
     sources = {
       default = { "supermaven" },
       providers = {
-        supermaven = { name = "supermaven", module = "blink.compat.source", async = true },
+        supermaven = {
+          name = "supermaven",
+          module = "blink.compat.source",
+          async = true,
+          score_offset = 0,
+        },
       },
     },
   },

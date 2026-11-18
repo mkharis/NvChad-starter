@@ -21,7 +21,19 @@ vim.lsp.config("vtsls", {
   filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" },
 })
 
-local servers = { "html", "cssls", "eslint", "svelte", "vue_ls", "vtsls", "pyright", "intelephense" }
+local servers = {
+  "html",
+  "cssls",
+  "eslint",
+  "svelte",
+  "vue_ls",
+  "vtsls",
+  "tailwindcss",
+  "jsonls",
+  "yamlls",
+  "pyright",
+  "intelephense",
+}
 vim.lsp.enable(servers)
 
 -- read :h vim.lsp.config for changing options of lsp servers
